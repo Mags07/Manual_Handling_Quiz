@@ -5,16 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Manual Handling Quiz</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <title>Manual Handling Quiz</title>
 </head>
-<body>
-    <h1 class="heading"> Manual Handling Training Quiz</h1>
-    <div class="back_area">
-    </div>
-    <div class="score_area">
-        <p class="scores">Correct Answers<span id="score">0</span></p>
-        <p class="scores">Incorect Answers<span id="incorect">0</span></p>
+<body class="main_body">
+    <div class="qiuiz_background">
+        <div class="container">
+            <div class="top">
+                <h1 class="quiz_title">Manual Handling Questionare based on the Irish Law</h1>
+                <div class="quiz-score">
+                    <span id="correct_score"></span>/<span id="total_question"></span>
+                </div>
+            </div>
+            <div class="quiz_body">
+                <h2 class="questions" id="question">Manual Handling Q1</h2>
+                <ul class="options">
+                    <li>A. ?</li>
+                    <li>B. ?</li>
+                    <li>C. ?</li>
+                    <li>D. ?</li>
+                </ul>
+                <div id="result">
+                </div>
+            </div>
+        </div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
