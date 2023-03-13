@@ -1,7 +1,42 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway%7CRighteous");
-*{
-    margin:0;
-    padding:0;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/*
+cream (light colour)
+#F0EDE2
+yellow (light pur)
+#DDB934
+green 
+#899851
+grey (grey colour)
+#62615E
+black (dark colour)
+#00000
+*/
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+.main_body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    min-height: 70vh;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    background: #62615E;
+}
+
+.quiz_background {
+    background: #F0EDE2;
+    width: 600px;
+    height: 500px;
+    padding: 5%;
+    position: relative;
 }
 
