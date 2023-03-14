@@ -7,6 +7,8 @@ yellow (light pur)
 #DDB934
 green 
 #899851
+light grey (light grey)
+#CECECE
 grey (grey colour)
 #62615E
 black (dark colour)
@@ -17,6 +19,7 @@ black (dark colour)
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-radius: 1%;
 }
 
 .main_body {
@@ -29,7 +32,7 @@ body{
     min-height: 70vh;
     font-family: 'Raleway', sans-serif;
     color: #000;
-    background: #62615E;
+    background: #899851;
 }
 
 .quiz_background {
@@ -38,6 +41,7 @@ body{
     height: 500px;
     padding: 5%;
     position: relative;
+    box-shadow: 0px 20px 36px -10px rgba(0,0,0,0.6);
 }
 
 .quiz_title {
@@ -67,15 +71,25 @@ body{
     margin: 5%;
 }
 
-.options li {
-    margin: 1%;
+.options li{
+    margin: 2%;
     cursor: pointer;
     background: #DDB934;
     border: 1px solid;
     color: #000;
-    box-shadow: 0 1px;
     transition: all ease-in-out;
+    border-radius: 3%;
+    box-shadow: 0px 20px 36px -10px rgba(0,0,0,0.6);
+    border-radius: 3%;
 }
 
+.options li:hover{
+    background: #899851;
+    color: #F0EDE2;
+    border-color: #62615E;
+    box-shadow: 0.5px 3px 1px 2px #CECECE;
+}
 
-
+.options li:active{
+    transform: scale(1);
+}
