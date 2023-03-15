@@ -59,6 +59,7 @@ body{
 
 .questions {
     font-size: 25px;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     margin: 5%;
     height: 40px;
@@ -71,25 +72,51 @@ body{
     margin: 5%;
 }
 
-.options li{
+.options li {
     margin: 2%;
     cursor: pointer;
+    font-weight: 600;
     background: #DDB934;
     border: 1px solid;
     color: #000;
     transition: all ease-in-out;
     border-radius: 3%;
     box-shadow: 0px 20px 36px -10px rgba(0,0,0,0.6);
-    border-radius: 3%;
 }
 
-.options li:hover{
+.options li:hover {
     background: #899851;
     color: #F0EDE2;
     border-color: #62615E;
     box-shadow: 0.5px 3px 1px 2px #CECECE;
 }
 
-.options li:active{
+.options li:active {
     transform: scale(1);
+}
+
+.score_area button {
+    border-color: #CECECE;
+    background-color: #CECECE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    transition: ease-in-out;
+}
+
+.score_area button:hover {
+    background-color: #899851;
+    color: #F0EDE2;
+}
+
+.score_area button:active {
+    transform: scale(1);
+}
+
+#result {
+    text-align: center;
+    font-weight: 600;
 }
