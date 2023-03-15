@@ -1,108 +1,254 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Am I Responcive](screenshots/am-i-responcive.png)
 
-Welcome Margarita B,
+# Sauna Beach Spa
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Sauna Beach Spa is a new small sauna and spa B2C business located on a beautiful Garretstown beach in County Cork. The site is targeted towards people around Cork looking for a way to spend time with friends and family in a relaxing environment. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The website provides just enough information to get people's interest without over loading them with lots of reading. Minimalist visual style offers a calming effect to the visitor with minimal clicks needed to reach the end goal of contacting the sauna. Images show relaxed guests. Soothing ocean color scheme and simple layout to make them feel like they are already there. If they feel calm just looking at the website they will more likely be convinced that this experince will offer them the ultimate relaxation.
 
-## Gitpod Reminders
+The owner wanted the website to privide some information on the story of the business, the health benefits, the treatment options and quick way for people to contact them with enquiries. They also wanted to provide people with a sence of longing to be by the seaside getting a massage.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+**Link to** [live site](https://mags07.github.io/Sauna-Beach-Spa/)
 
-`python3 -m http.server`
+Full website designed myself: [Margarita Buyukli](https://www.linkedin.com/in/margarita-buyukli-b16477a6/)
 
-A blue button should appear to click: _Make Public_,
+## Contents
+- [**Market Research**](#market-research)
+  - [**Competitor Analysis**](#competitor-analysis)
+    - [**Competitor 1**](#competitor-1)
+    - [**Competitor 2**](#competitor-2)
 
-Another blue button should appear to click: _Open Browser_.
+- [**Business Goals**](#business-goals)
+  - [**Scope**](#scope)
+  - [**Specifications**](#specifications)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- [**User Experience**](#user-experience)
+  - [**User Stories**](#user-stories)
+  - [**Responsive Web Design**](#responsive-web-design)
 
-A blue button should appear to click: _Make Public_,
+- [**Design**](#design)
+  - [**Mockup**](#mockup)
+  - [**Imagery**](#imagery)
+  - [**Typography**](#typography)
 
-Another blue button should appear to click: _Open Browser_.
+- [**Technologies**](#technologies)
+  - [**Languages**](#languages)
+  - [**Libraries**](#libraries)
+  - [**Other Tools**](#other-tools)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- [**Testing**](#testing)
 
-To log into the Heroku toolbelt CLI:
+- [**Deployment**](#deployment)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- [**Credits**](#credits)
+  - [**Articles**](#articles)
+  - [**Acknowledgements**](#acknowledgements)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
 
-## Release History
+## Market Research
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Competitor Analysis 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- __Competitor 1__
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+[The Sauna Snugg](https://www.thesaunasnugg.com/book-now)
+Customer pain points:
+- The website has a large navigation bar
+- There is alot to read
+- Lack of photos
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- __Competitor 2__
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+[My Hot Spot](https://www.myhotspot.ie/)
+Customer pain points:
+- Modern, parallax website, but it doesn't get the cozy point across.
+- Lack of photos
+- You have to donwload an app to book
+<br>
+<br>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Business Goals
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Scope
+4 pages 
+- Home - About us, a short walk-through description of the experience, health benefits.
+- Services - 4-5 massage options plus combos. Price list at the bottom of the page.
+- Facilities - Changing room, sauna with a beach view, lounge area with a beach view, water/juice station.
+- Contact - Working hours, Google maps location, contact us form.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Specifications
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- __Aspects of a website to address pain points of visitors__
+- Minimalist style 
+- Lots of photos(from https://pixabay.com/ https://unsplash.com/ )
+-Bullet points instead of big blocks of text
+- Mouse hovering reactions to catch attention to links
+- A contact form
+- Google Maps API
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## User Experince
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### First Time Visitor Goals
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+  - See the short information about Danielle, and learn about services she provides.
+  - Have an easy access to the all site's content by clicking the correct navigation link.
+  - Have an easy access to the social media links such as Instagram, Youtube and Facebook.
+  - See the up-to-date packages being offered.
+  - To see the opening and closing times and what days the sauna is open.
+  - Find out how long the packages take.
+  - Find information about prices
+  - Be able to contact the business owner as I wish through social media, e-mail or a contact form.
+  - Navigate to the location of the sauna easily.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Returning Visitor Goals
 
-------
+  - Be able to navigate easily towards the contact form from the Home page.
+  - Have easy access to the map and phone number for a quick call incase I get lost on the way.
+  - Have an easy access to contact the owner incase I need to chance or cancel a booking, wheather I feel more comformatable doing it over social media, email or a phone call.
+  - See the up-to-date packages and prices being offered if it's been a while since I went there.
 
-## FAQ about the uptime script
+## Design
 
-**Why have you added this script?**
+### Colour Scheme
+Inspiration from [Pinterest](https://www.pinterest.ie/pin/905927281264221410/)
+![Colour Inspiration](screenshots/colour-palet.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Colour Scheme chosen from [Coolors](https://coolors.co/)
+![Colour Scheme](screenshots/blue-spa-colour-scheme.png)
 
-**How will this affect me?**
+Visual colour accessability analitics
+[Contrast Grid Eightshapes](https://contrast-grid.eightshapes.com/)
+![](screenshots/colour-contrast-accessibility.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Typography
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- [Google Fonts](https://fonts.google.com/)
 
-**So….?**
+  - Used 'Biryani' font for the logo and headings as it looks profisional, but soft/rounded.
+  - Used 'Montserrat' for for the main body writing as it is even more rounded.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Images & Video
 
-**Can I opt out?**
+All videos and images are from [Pexels](https://www.pexels.com/)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Logo
+Logo icon from [Favicon](https://favicon.io/)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Wireframes
+- Wireframes were created using [Balsamiq](https://balsamiq.com/)
+<!--Balsamiq Wireframes here-->
+![](screenshots/wireframe1.png)
+![](screenshots/wireframe2.png)
+![](screenshots/wireframe3.png)
 
-**Anything more?**
+### Features
+Navigation
+Hero in Home page - catch attention
+Welcome - about us
+Benefits
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Footer
+Hero images in the rest of the website
+Imagery - movement and opaques to catch attention
+Links for ease of navigation through the website without call to action being too presuring.
 
----
+Future Features
+Booking online without contact to be able to see availability before commiting to booking.
 
-Happy coding!
+[Back to contents](#contents)
+
+## Technologies
+
+https://grid.layoutit.com/
+
+### Languages
+
+- [HTML5](https://www.w3schools.com/html/default.asp/)
+
+  - Used for the creation of the website content.
+
+- [CSS3](https://www.w3schools.com/Css/default.asp/)
+
+  - Cascading Style Sheets language used to style individual pages.
+
+[Back to contents](#contents)
+
+### Libraries & Other Tools
+
+- [](https://.com/)
+  - helps with
+
+- [Grid Layout It](https://grid.layoutit.com/)
+
+- [GitHub](https://github.com/)
+
+  - Hosting service for software development.
+
+- [FontAwesome](https://fontawesome.com/)
+
+  - Icon library and toolkit.
+
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+
+  - Audit the site for performance, quality, best practices and SEO.
+
+- [AmIResponsive](https://ui.dev/amiresponsive/)
+
+  - An online tool to check how responsive the website is on different screen sizes. Screenshot of this is provided in the begining of README.
+
+- [Markup Validation Service](https://validator.w3.org/)
+
+  - Validator checks the markup validity of Web documents in HTML.
+
+- [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+  - Online tool validates CSS.
+
+[Back to contents](#contents)
+
+## Testing
+
+Testing process and results can be found [here](https://github.com......md).
+
+## Deployment
+
+The site was deployed to GitHub pages: [Github](https://github.com/)
+The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab.
+From the left hand menu select 'Pages'
+From the source select Branch: main
+Click 'Save'
+A live link will be displayed when published successfully. It may take about 5 minutes.
+The live link can be found here: https://mags07.github.io/Sauna-Beach-Spa/index.html
+
+[Back to contents](#contents)
+
+## Credits
+- Grid Template Layout
+https://www.youtube.com/watch?v=Pip8s2BpelM&ab_channel=SixMinutes.Smarter.
+
+### Articles
+
+- 
+- 
+
+### Acknowledgements
+
+- My mentor Elaine Roche for her advice.
+- [Stackoverflow](https://stackoverflow.com/) community that have answered alot of similar questions I had.
+- Google search engine for the overload of information on website development.
+
+### Content 
+- The text for the Home page was taken from;
+- The icon in the logo and the social media icons in the footer [Font Awesome](https://fontawesome.com/)
+
+[Back to contents](#contents)
+
+### Media
+
+- The photos used :
+- The video used:
