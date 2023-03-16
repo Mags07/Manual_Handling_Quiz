@@ -2,22 +2,15 @@
 
 # Sauna Beach Spa
 
-Sauna Beach Spa is a new small sauna and spa B2C business located on a beautiful Garretstown beach in County Cork. The site is targeted towards people around Cork looking for a way to spend time with friends and family in a relaxing environment. 
+Manual Handling Quiz is useful for people who may want to refresh abit of their training. Employers may send this out to their staff to do a quick review if anyone should re-do their training soon. In Ireland employers are legaly bound to facilitating Manual Handling training within all types of work settings. But some people may need re-freshers sooner.
 
-The website provides just enough information to get people's interest without over loading them with lots of reading. Minimalist visual style offers a calming effect to the visitor with minimal clicks needed to reach the end goal of contacting the sauna. Images show relaxed guests. Soothing ocean color scheme and simple layout to make them feel like they are already there. If they feel calm just looking at the website they will more likely be convinced that this experince will offer them the ultimate relaxation.
+This quiz is based on the Irish Health and Safety Authority.
 
-The owner wanted the website to privide some information on the story of the business, the health benefits, the treatment options and quick way for people to contact them with enquiries. They also wanted to provide people with a sence of longing to be by the seaside getting a massage.
+**Link to** [live site](https://mags07.github.io/Manual_Handling_Quiz/)
 
-**Link to** [live site](https://mags07.github.io/Sauna-Beach-Spa/)
-
-Full website designed myself: [Margarita Buyukli](https://www.linkedin.com/in/margarita-buyukli-b16477a6/)
+Full website designed myself: [Margarita Buyukli](https://www.linkedin.com/in/margarita-buyukli/)
 
 ## Contents
-- [**Market Research**](#market-research)
-  - [**Competitor Analysis**](#competitor-analysis)
-    - [**Competitor 1**](#competitor-1)
-    - [**Competitor 2**](#competitor-2)
-
 - [**Business Goals**](#business-goals)
   - [**Scope**](#scope)
   - [**Specifications**](#specifications)
@@ -45,125 +38,86 @@ Full website designed myself: [Margarita Buyukli](https://www.linkedin.com/in/ma
   - [**Acknowledgements**](#acknowledgements)
 
 
-
-## Market Research
-
-### Competitor Analysis 
-
-- __Competitor 1__
-
-[The Sauna Snugg](https://www.thesaunasnugg.com/book-now)
-Customer pain points:
-- The website has a large navigation bar
-- There is alot to read
-- Lack of photos
-
-- __Competitor 2__
-
-[My Hot Spot](https://www.myhotspot.ie/)
-Customer pain points:
-- Modern, parallax website, but it doesn't get the cozy point across.
-- Lack of photos
-- You have to donwload an app to book
-<br>
-<br>
-
 ## Business Goals
 
 ### Scope
-4 pages 
-- Home - About us, a short walk-through description of the experience, health benefits.
-- Services - 4-5 massage options plus combos. Price list at the bottom of the page.
-- Facilities - Changing room, sauna with a beach view, lounge area with a beach view, water/juice station.
-- Contact - Working hours, Google maps location, contact us form.
+1 page
+- 10 questions
+- Questions to apear one by one, in random order.
+- Some questions included are quite straight forward, while other are harder.
+- This page is for users to learn about their knowledge on this topic.
 
 ### Specifications
 
-- __Aspects of a website to address pain points of visitors__
-- Minimalist style 
-- Lots of photos(from https://pixabay.com/ https://unsplash.com/ )
--Bullet points instead of big blocks of text
-- Mouse hovering reactions to catch attention to links
-- A contact form
-- Google Maps API
+- __Aspects of a website to include__
+- This quiz is not an offical HSA quiz, therefore it is just to help people to test their knowledge. Perhaps for a little entartaiment.
+- The colours should be bold to attract users. For example the background photo is from https://unsplash.com/photos/Rbs7VW98G9A )
+-The questions will vary between easy and hard.
+- Mouse hovering reactions to make it more user friendly.
+- As manual Handling is not the most entertaining topic, the quiz contains 10 questions. So it doenst take too long. Avoiding people not completing the quiz.
 
 
 ## User Experince
 
 ### First Time Visitor Goals
 
-  - See the short information about Danielle, and learn about services she provides.
-  - Have an easy access to the all site's content by clicking the correct navigation link.
-  - Have an easy access to the social media links such as Instagram, Youtube and Facebook.
-  - See the up-to-date packages being offered.
-  - To see the opening and closing times and what days the sauna is open.
-  - Find out how long the packages take.
-  - Find information about prices
-  - Be able to contact the business owner as I wish through social media, e-mail or a contact form.
-  - Navigate to the location of the sauna easily.
-
+  - To imediatelly understand what is the main purpose of this website.
+  - To be user friendly by simplifying the prosses people need to go through to do this quiz.
+  - To make it look enterntaining, when the topic it's self may not be to alot of people.
+  - To make sure the website is responsive on whatever devise the visitor is on.
 
 ### Returning Visitor Goals
 
-  - Be able to navigate easily towards the contact form from the Home page.
-  - Have easy access to the map and phone number for a quick call incase I get lost on the way.
-  - Have an easy access to contact the owner incase I need to chance or cancel a booking, wheather I feel more comformatable doing it over social media, email or a phone call.
-  - See the up-to-date packages and prices being offered if it's been a while since I went there.
+  - Be able to find the website again easily with the use of SEO keywords.
+  - If the employer is sharing this website, they want to make sure everyone will be able to navigate through it easily. Even people who lack technological skills or have low level of english.
+  - To be able to access this quiz on any screen size device.
 
 ## Design
 
 ### Colour Scheme
-Inspiration from [Pinterest](https://www.pinterest.ie/pin/905927281264221410/)
-![Colour Inspiration](screenshots/colour-palet.png)
-
 Colour Scheme chosen from [Coolors](https://coolors.co/)
-![Colour Scheme](screenshots/blue-spa-colour-scheme.png)
+![Colour Scheme](assets/images/colour_palette.png)
 
 Visual colour accessability analitics
 [Contrast Grid Eightshapes](https://contrast-grid.eightshapes.com/)
-![](screenshots/colour-contrast-accessibility.png)
+![](assets/images/project_2_contrast.png)
 
 
 ### Typography
 
 - [Google Fonts](https://fonts.google.com/)
 
-  - Used 'Biryani' font for the logo and headings as it looks profisional, but soft/rounded.
-  - Used 'Montserrat' for for the main body writing as it is even more rounded.
+  - Used 'Raleway' font for all the text, to make it look less official, and more fun.
 
-### Images & Video
+### Image
 
-All videos and images are from [Pexels](https://www.pexels.com/)
+Image from [Unsplash](https://unsplash.com/photos/Rbs7VW98G9A)
 
-### Logo
-Logo icon from [Favicon](https://favicon.io/)
+### Favicon
+LogFavicon icon from [Favicon](https://favicon.io/favicon-generator/)
 
 ### Wireframes
 - Wireframes were created using [Balsamiq](https://balsamiq.com/)
 <!--Balsamiq Wireframes here-->
-![](screenshots/wireframe1.png)
+<!-- ![](screenshots/wireframe1.png)
 ![](screenshots/wireframe2.png)
-![](screenshots/wireframe3.png)
+![](screenshots/wireframe3.png) -->
 
 ### Features
-Navigation
-Hero in Home page - catch attention
-Welcome - about us
-Benefits
+10 questions - not too long and not too short, as the topic is not the most entartaining for most people.
+Imagery - colourful, to keep the user's attention
+Buttons - for ease of navigation through the website
 
-Footer
-Hero images in the rest of the website
-Imagery - movement and opaques to catch attention
-Links for ease of navigation through the website without call to action being too presuring.
-
-Future Features
-Booking online without contact to be able to see availability before commiting to booking.
+- Future Features
+Adding more questions to the mix, while leaving the test at 10 questions.
+Allowing people to register to save their score.
+Adding an invitation through email for employers to invite employees to take this quiz.
 
 [Back to contents](#contents)
 
 ## Technologies
 
-https://grid.layoutit.com/
+- Box Shadow Generator [CSSmatic](https://www.cssmatic.com/box-shadow/)
 
 ### Languages
 
@@ -174,6 +128,9 @@ https://grid.layoutit.com/
 - [CSS3](https://www.w3schools.com/Css/default.asp/)
 
   - Cascading Style Sheets language used to style individual pages.
+
+- [JavaScript](https://www.w3schools.com/js/default.asp/)
+- JaveScript was used to program the behaviour of the quiz.
 
 [Back to contents](#contents)
 
@@ -196,6 +153,10 @@ https://grid.layoutit.com/
 
   - Audit the site for performance, quality, best practices and SEO.
 
+- [Microsoft Edge DevTools](https://developer.microsoft.com/en-us/microsoft-edge/tools/)
+
+ - Was used to test the code and debug the code during the development process.
+
 - [AmIResponsive](https://ui.dev/amiresponsive/)
 
   - An online tool to check how responsive the website is on different screen sizes. Screenshot of this is provided in the begining of README.
@@ -207,6 +168,10 @@ https://grid.layoutit.com/
 - [CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 
   - Online tool validates CSS.
+
+- [JavaScript Hint](https://jshint.com/)
+
+  - Online tool to validate JavaScript
 
 [Back to contents](#contents)
 
@@ -228,27 +193,20 @@ The live link can be found here: https://mags07.github.io/Sauna-Beach-Spa/index.
 [Back to contents](#contents)
 
 ## Credits
-- Grid Template Layout
-https://www.youtube.com/watch?v=Pip8s2BpelM&ab_channel=SixMinutes.Smarter.
+- [Youtube Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k/)
 
 ### Articles
-
-- 
+- [Sitepoint JavaScript Quiz](https://www.sitepoint.com/simple-javascript-quiz/)
+- [Geeks for geeks](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/)
 - 
 
 ### Acknowledgements
 
-- My mentor Elaine Roche for her advice.
+- My mentor Elaine Roche.
 - [Stackoverflow](https://stackoverflow.com/) community that have answered alot of similar questions I had.
 - Google search engine for the overload of information on website development.
 
 ### Content 
-- The text for the Home page was taken from;
-- The icon in the logo and the social media icons in the footer [Font Awesome](https://fontawesome.com/)
+- The text for the Home page was taken from; [Test questions](https://www.test-questions.com/manual-handling-test-01.php/). But as I am a certified Manual Handling instructor I was able to confirm that the questions from UK would still apply in our Irish setting.
 
 [Back to contents](#contents)
-
-### Media
-
-- The photos used :
-- The video used:

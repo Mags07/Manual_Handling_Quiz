@@ -1,3 +1,6 @@
+//Code guide followed from; https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=CodingNepal
+
+//questions, options and answers
 const questions = [
     {question: "What is the general guideline of maximum weight for lifting and lowering at work?",
     answer: [
@@ -11,7 +14,7 @@ const questions = [
     {question: "What should you do if you discover a better way of lifting a load than the method currently in place?",
     answer: [
         {option: "Ignore the current method and carry on with your own method?", correct: false},
-        {option: "Ask your colleagues if they think it’s a good idea and if yes, start using it.", correct: false},
+        {option: "Ask your colleagues if they think it is a good idea and if yes, start using it.", correct: false},
         {option: "Carry on using the method that is already in place and forget about your own idea.", correct: false},
         {option: "Discuss your idea with your supervisor.", correct: true}
         ]
@@ -48,7 +51,7 @@ const questions = [
     answer: [
         {option: "Ask a colleague to walk beside you and give you instruction.", correct: false},
         {option: "Ask a colleague to help carry the load and ensure you both can see ahead.", correct: true},
-        {option: "Ask a colleague to walk in front of you and warn others when you’re approaching.", correct: false},
+        {option: "Ask a colleague to walk in front of you and warn others when you are approaching.", correct: false},
         {option: "Ask another colleague to carry it instead.", correct: false}
         ]
     },
@@ -90,21 +93,97 @@ const questions = [
     }
 ]
 
-function runQuiz (){
+const startButton = document.querySelector('start-btn');
+const nextButton = document.querySelector('next-btn');
+const questionElement = document.querySelector('question');
+const optionsElement = document.querySelector('options');
+const resultContainer = document.querySelector('result');
 
-}
+let shuffledQuestions;
+let currentQuestionIndex;
 
-function checkAnswer (){
+startButton.addEventListener('click', startGame);
+nextButton.addEventListener('click', () => {
+currentQuestionIndex++
+setNextQuestion()
+})
 
-}
-
-function correctAnswers (){
-
-}
-
-function incrementScore (){
+function checkAnswer (){}
+function correctAnswers (){}
+function incrementScore (){}
     
+function startQuiz() {
+    console.log('started')
+    startQuizBtn.classList.add("hide");
+    instructionsContainer.classList.add("hide");
+    resultsContainer.classList.add("hide");
+    quizContainer.style.display = "block";
+    shuffledQuestions = quizQuestions.sort(() => Math.random() -0.5);
+    questionIndex = 0;
+    loadQuestion();
 }
 
+function loadQuestion() {
+resetState()
+showQuestion(shuffledQuestions[questionIndex])
+}
 
+// function showQuestion(question) {
+// questionElement.innerText = question.question
+// question.answers.forEach(answer => {
+//     const button = document.createElement('button')
+//     button.innerText = answer.text
+//     button.classList.add('btn')
+//     if (answer.correct) {
+//     button.dataset.correct = answer.correct
+//     }
+//     button.addEventListener('click', selectAnswer)
+//     answerButtonsElement.appendChild(button)
+// })
+// }
 
+function resetState() {
+clearStatusClass(document.body)
+nextButton.classList.add('hide')
+while (answerButtonsElement.firstChild) {
+    answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+}
+}
+
+function selectAnswer(e) {
+const selectedButton = e.target
+const correct = selectedButton.dataset.correct
+setStatusClass(document.body, correct)
+Array.from(answerButtonsElement.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct)
+})
+if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove('hide')
+} else {
+    startButton.innerText = 'Restart'
+    startButton.classList.remove('hide')
+}
+}
+
+function setStatusClass(element, correct) {
+clearStatusClass(element)
+if (correct) {
+    element.classList.add('correct')
+} else {
+    element.classList.add('wrong')
+}
+}
+
+function clearStatusClass(element) {
+element.classList.remove('correct')
+element.classList.remove('wrong')
+}
+
+function incrementWrongAnswer() {
+    let oldScore = parseInt(document.querySelector("#incorrect").innerText);
+    document.querySelector("#incorrect").innerText = oldScore + 10;
+}
+
+buttonExit.addEventListener("click", backHome => {
+    window.location.href = "index.html";
+});

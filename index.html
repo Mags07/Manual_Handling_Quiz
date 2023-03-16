@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manual Handling Quiz, based in Ireland">
+    <meta name="keywords"
+        content="manual handling, manual handling ireland, manual handling quiz, manual handling questioner">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <!-- Generated favicon.io -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
     <!-- End of favicon.io -->
     <title>Manual Handling Quiz</title>
 </head>
 <body class="main_body">
-    <div class="quiz_background">
+    <div id="quiz_background">
         <div class="container">
-            <div class="top">
-                <h1 class="quiz_title">Manual Handling Questionare based on the Irish Law</h1>
-            </div>
-            <div class="quiz_body">
-                <h2 class="questions" id="question">Manual Handling Q1</h2>
+            <h1 class="quiz_title">Manual Handling Questionare based on the Irish Law</h1>
+            <div class="hide">
+                <div id="question">Q</div>
                 <div class="options">
-                    <ul id="opt_list">
-                        <li id="a" class="choice" onClick="checkResult(this, this)">test</li>
-                        <li id="b" class="choice" onClick="checkResult(this, this)">test</li>
-                        <li id="c" class="choice" onClick="checkResult(this, this)">test</li>
-                        <li id="d" class="choice" onClick="checkResult(this, this)">test</li>
-                    </ul>
+                    <button class="choice opt_btn" id="a">T</button>
+                    <button class="choice opt_btn" id="b">T</button>
+                    <button class="choice opt_btn" id="c">T</button>
+                    <button class="choice opt_btn" id="d">T</button>
                 </div>
-                <div class="result">
-                </div>
+            </div>
+            <div class="result">
                 <div class="score_area">
-                    <button type="button" id="submit_answer">Submit Answer</button>
-                    <div class="center">
-                        <p id="score_count"></p>
-                    </div>
-                    <div class="progress_bar">
-                        <div class="progress_bar_x"></div>
-                    </div>
+                    <button type="button" class="start_btn btn">Start</button>
+                    <button type="button" class="next_btn btn hide">Next</button>
+                </div>
+                <div class="center">
+                    <p id="score_count"></p>
+                </div>
+                <div class="progress_bar">
+                    <div class="progress_bar_x"></div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
