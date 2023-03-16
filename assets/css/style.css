@@ -39,7 +39,7 @@ body{
 .quiz_background {
     background: #F0EDE2;
     width: 590px;
-    height: 500px;
+    height: 650px;
     padding: 5%;
     position: relative;
     box-shadow: 0px 20px 36px -10px rgba(0,0,0,0.6);
@@ -84,8 +84,11 @@ body{
 }
 
 .options li {
+    list-style-type: none;
     margin: 2%;
+    padding: 2%;
     cursor: pointer;
+    font-size: 15px;
     font-weight: 600;
     background: #DDB934;
     border: 1px solid;
@@ -127,13 +130,36 @@ body{
     transform: scale(1);
 }
 
-#result {
+.result {
     text-align: center;
     font-weight: 600;
 }
 
-#result i {
+.result i {
     margin: 5%;
     background-color: #DDB934;
     color: #000;
+}
+
+.score {
+    font-size: 15px;
+    font-family:'Raleway', serif;
+    font-weight: 400;
+    color: #0000;
+}
+
+.progress_bar {
+    width: 360px;
+    height: 12px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.progress_bar_x {
+    height: 12px;
+    background-color: #899851;
+    width: 0%;
 }
