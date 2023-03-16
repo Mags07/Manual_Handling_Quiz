@@ -98,10 +98,11 @@ LogFavicon icon from [Favicon](https://favicon.io/favicon-generator/)
 
 ### Wireframes
 - Wireframes were created using [Balsamiq](https://balsamiq.com/)
-<!--Balsamiq Wireframes here-->
-<!-- ![](screenshots/wireframe1.png)
-![](screenshots/wireframe2.png)
-![](screenshots/wireframe3.png) -->
+
+![](assets/images/wireframe_start_page.png)
+![](assets/images/wireframe_quiz.png)
+![](assets/images/wireframe_good_result.png)
+![](assets/images/wireframe_bad_result.png)
 
 ### Features
 10 questions - not too long and not too short, as the topic is not the most entartaining for most people.
@@ -177,7 +178,7 @@ Adding an invitation through email for employers to invite employees to take thi
 
 ## Testing
 
-Testing process and results can be found [here](https://github.com......md).
+For testing the DevTools have been used. But alot has not been solved.
 
 ## Deployment
 

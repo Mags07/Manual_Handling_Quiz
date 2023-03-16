@@ -1,6 +1,6 @@
 //Code guide followed from; https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=CodingNepal
 
-//questions, options and answers
+//questions, options and answers from https://www.test-questions.com/manual-handling-test-01.php
 const questions = [
     {question: "What is the general guideline of maximum weight for lifting and lowering at work?",
     answer: [
@@ -93,12 +93,14 @@ const questions = [
     }
 ]
 
+//Selecting elements by declaring constants.
 const startButton = document.querySelector('start-btn');
 const nextButton = document.querySelector('next-btn');
 const questionElement = document.querySelector('question');
 const optionsElement = document.querySelector('options');
 const resultContainer = document.querySelector('result');
 
+//Shuffeling the questions, so there is a veriety for returning visitors.
 let shuffledQuestions;
 let currentQuestionIndex;
 

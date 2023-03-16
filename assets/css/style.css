@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-
-/*
-cream (light colour)
-#F0EDE2
-light grey (light grey)
-#CECECE
-gold (light pur)
-#95780F
-red
-#821919
-green
-#49581A
-black (dark colour)
-#00000
-*/
 /* Page styles */
-
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +7,7 @@ black (dark colour)
     border-radius: 1%;
 }
 
+/* Setting a background image to cover the whole screen of any device */
 .main_body {
     display:flex;
     align-items: center;
@@ -37,6 +22,7 @@ body{
     background: #95780F;
 }
 
+/* Styling for the quiz container */
 #quiz_background {
     background: #F0EDE2;
     width: 700px;
@@ -46,19 +32,13 @@ body{
     box-shadow: 0px 30px 50px -10px rgba(0,0,0,0.6);
 }
 
+/* The main sentence explaining the quiz */
 .quiz_title {
     text-align: center;
     font-size: 23px;
 }
 
-body.correct {
-    color: #49581A;
-}
-
-body.wrong {
-    color: #821919;
-}
-
+/* The question styling as the questions it's self changes */
 #question {
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
@@ -72,6 +52,7 @@ body.wrong {
     margin: 5%;
 }
 
+/* Option button stylying */
 .opt_btn {
     font-weight: 600;
     color: #F0EDE2;
@@ -84,6 +65,7 @@ body.wrong {
     border-color: #CECECE;
 }
 
+/* option button hovering to keep the visitors attention */
 .opt_btn:hover {
     border-color: #62615E;
     box-shadow: 0.5px 3px 1px 2px #CECECE;
@@ -102,11 +84,14 @@ body.wrong {
     margin: 10%;
 }
 
+/* The start/ next button hover to keep the visitor's attention */
 .btn:hover {
     background-color: #000;
     color: #F0EDE2;
 }
 
+
+/* Highlighting if the visitor picks the right or wrong answer once they click on their choice*/
 .correct {
     background-color: #49581A;
 }
@@ -115,6 +100,7 @@ body.wrong {
     background-color: #821919;
 }
 
+/* To allow the visitor to keep track of their score as they go on. */
 .score_area button:active {
     transform: scale(1);
 }
@@ -156,6 +142,7 @@ body.wrong {
     width: 0%;
 }
 
-/* .hide {
+/* Hides everything but the title, and the start button for the quiz */
+.hide {
     display: none;
-} */
+}
