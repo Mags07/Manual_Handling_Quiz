@@ -14,6 +14,7 @@ grey (grey colour)
 black (dark colour)
 #00000
 */
+/* Page styles */
 
 * {
     margin: 0;
@@ -47,6 +48,16 @@ body{
 .quiz_title {
     text-align: center;
     font-size: 30px;
+}
+
+.introduction {
+    background-color: #DDB934;
+    border: #000;
+    color: #000;
+    font-size: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
 }
 
 .quiz_score {
