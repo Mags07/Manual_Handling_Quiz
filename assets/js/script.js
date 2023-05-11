@@ -1,9 +1,9 @@
 //Code guide followed from; https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=CodingNepal
 
 //questions, options and answers from https://www.test-questions.com/manual-handling-test-01.php
-const questionIndex = [{
+const questions = [{
         question: "What is the general guideline of maximum weight for lifting and lowering at work?",
-        answer: [{
+        answers: [{
                 option: "15kg",
                 correct: false
             },
@@ -24,7 +24,7 @@ const questionIndex = [{
 
     {
         question: "What should you do if you discover a better way of lifting a load than the method currently in place?",
-        answer: [{
+        answers: [{
                 option: "Ignore the current method and carry on with your own method?",
                 correct: false
             },
@@ -45,7 +45,7 @@ const questionIndex = [{
 
     {
         question: "What is the first step of manual handling before attempting to lift a load?",
-        answer: [{
+        answers: [{
                 option: "The colour of the box.",
                 correct: false
             },
@@ -66,7 +66,7 @@ const questionIndex = [{
 
     {
         question: "Which part of your body are you most likely to injure if you lift heavy loads",
-        answer: [{
+        answers: [{
                 option: "Your back",
                 correct: true
             },
@@ -87,7 +87,7 @@ const questionIndex = [{
 
     {
         question: "If a staff member discovers she is pregnant, should she…",
-        answer: [{
+        answers: [{
                 option: "Hide this for as long as possible, but avoid heavy lifting.",
                 correct: false
             },
@@ -108,7 +108,7 @@ const questionIndex = [{
 
     {
         question: "What should you do if you need to lift a load that blocks your view?",
-        answer: [{
+        answers: [{
                 option: "Ask a colleague to walk beside you and give you instruction.",
                 correct: false
             },
@@ -129,7 +129,7 @@ const questionIndex = [{
 
     {
         question: "What should you do if the load is too heavy for you to carry on your own, and there are no colleagues around to help, and the load cannot be divided into smaller parts?",
-        answer: [{
+        answers: [{
                 option: "Pick up the load and run to move it faster.",
                 correct: false
             },
@@ -150,7 +150,7 @@ const questionIndex = [{
 
     {
         question: "How should you position yourself if you need to lift a load from the ground?",
-        answer: [{
+        answers: [{
                 option: "Feet as wide as possible, legs bent, back bent.",
                 correct: false
             },
@@ -171,7 +171,7 @@ const questionIndex = [{
 
     {
         question: "Who should decide what weight is safe for you to lift in your work environment?",
-        answer: [{
+        answers: [{
                 option: "Your supervisor",
                 correct: false
             },
@@ -192,7 +192,7 @@ const questionIndex = [{
 
     {
         question: "You need to move a load which is heavier on one side than the other. How do you pick it up?",
-        answer: [{
+        answers: [{
                 option: "With the heavier side away from you.",
                 correct: false
             },
@@ -235,36 +235,36 @@ document.addEventListener("DOMContentLoaded", () => {
 function startQuiz() {
     startButton.style.display = "none"
     startButton.classList.add("hide");
-    questionElement.classList.remove("hide")
-    setNextQuestion()
+    questionElement.parentElement.classList.remove("hide")
+    // instructionsContainer.classList.add("hide");
+    // resultsContainer.classList.add("hide");
+    // quizContainer.style.display = "block";
+    questionIndex = 0;
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    loadQuestion();
     nextButton.addEventListener("click", () => {
         questionIndex++;
     });
-    // startButton
-    instructionsContainer.classList.add("hide");
-    resultsContainer.classList.add("hide");
-    quizContainer.style.display = "block";
-    shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5);
-    questionIndex = 0;
-    loadQuestion();
     }
 
 function loadQuestion() {
-    resetState()
     showQuestion(shuffledQuestions[questionIndex])
     }
 
 function showQuestion(question) {
-    console.log("testtest");
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
-    const button = document.createElement('button')
-    button.innerText = answer.text
-    button.classList.add('btn')
-    if (answer.correct) {
-        button.dataset.correct = answer.correct
-    }
-    button.addEventListener('click', selectAnswer)
-    answerButtonsElement.appendChild(button)
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        document.body.insertBefore(button, optionsElement);
+        button.classList.add('btn')
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', selectAnswer)
+        answerButtonsElement.appendChild(button)
     })
 }
+
+//   function setStatusClass(element, correct) {
+//     clearStatusClass(element)
