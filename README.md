@@ -1,6 +1,6 @@
 ![Am I Responcive](screenshots/am-i-responcive.png)
 
-# Sauna Beach Spa
+# Manual Handling Quiz
 
 Manual Handling Quiz is useful for people who may want to refresh abit of their training. Employers may send this out to their staff to do a quick review if anyone should re-do their training soon. In Ireland employers are legaly bound to facilitating Manual Handling training within all types of work settings. But some people may need re-freshers sooner.
 
@@ -44,7 +44,7 @@ Full website designed myself: [Margarita Buyukli](https://www.linkedin.com/in/ma
 1 page
 - 10 questions
 - Questions to apear one by one, in random order.
-- Some questions included are quite straight forward, while other are harder.
+- Some questions included are quite straight forward, while others are harder.
 - This page is for users to learn about their knowledge on this topic.
 
 ### Specifications
@@ -63,7 +63,7 @@ Full website designed myself: [Margarita Buyukli](https://www.linkedin.com/in/ma
 
   - To imediatelly understand what is the main purpose of this website.
   - To be user friendly by simplifying the prosses people need to go through to do this quiz.
-  - To make it look enterntaining, when the topic it's self may not be to alot of people.
+  - To make it look enterntaining, when the topic it's self may not be entertaining to alot of people.
   - To make sure the website is responsive on whatever devise the visitor is on.
 
 ### Returning Visitor Goals
@@ -119,6 +119,7 @@ Adding an invitation through email for employers to invite employees to take thi
 ## Technologies
 
 - Box Shadow Generator [CSSmatic](https://www.cssmatic.com/box-shadow/)
+- Wireframes were created using [Balsamiq](https://balsamiq.com/)
 
 ### Languages
 
@@ -131,14 +132,12 @@ Adding an invitation through email for employers to invite employees to take thi
   - Cascading Style Sheets language used to style individual pages.
 
 - [JavaScript](https://www.w3schools.com/js/default.asp/)
-- JaveScript was used to program the behaviour of the quiz.
+
+  - JaveScript was used to program the behaviour of the quiz.
 
 [Back to contents](#contents)
 
 ### Libraries & Other Tools
-
-- [](https://.com/)
-  - helps with
 
 - [Grid Layout It](https://grid.layoutit.com/)
 
@@ -178,7 +177,24 @@ Adding an invitation through email for employers to invite employees to take thi
 
 ## Testing
 
-For testing the DevTools have been used. But alot has not been solved.
+- DevTools were used for testing code. Result:
+
+- Manual testing was complete of all 3 website pages. I.e. Start Quiz, Questions, Result.
+
+- Start Quiz
+    - Buttons 
+        - Expectated:
+        - Observed:
+        - Fixed by:
+    - Input Boxes
+        - Expectated:
+        - Observed:
+        - Fixed:
+    - Navigation links
+        - Expectated:
+        - Observed:
+        - Fixed:
+
 
 ## Deployment
 
@@ -194,7 +210,7 @@ The live link can be found here: https://mags07.github.io/Sauna-Beach-Spa/index.
 [Back to contents](#contents)
 
 ## Credits
-- [Youtube Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k/)
+- [Youtube Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k/)
 
 ### Articles
 - [Sitepoint JavaScript Quiz](https://www.sitepoint.com/simple-javascript-quiz/)
@@ -206,6 +222,7 @@ The live link can be found here: https://mags07.github.io/Sauna-Beach-Spa/index.
 - My mentor Elaine Roche.
 - [Stackoverflow](https://stackoverflow.com/) community that have answered alot of similar questions I had.
 - Google search engine for the overload of information on website development.
+- My partner Eoin, for his unwavering encouragement.
 
 ### Content 
 - The text for the Home page was taken from; [Test questions](https://www.test-questions.com/manual-handling-test-01.php/). But as I am a certified Manual Handling instructor I was able to confirm that the questions from UK would still apply in our Irish setting.
