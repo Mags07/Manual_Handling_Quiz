@@ -213,9 +213,9 @@ const questionIndex = [{
 ]
 
 //Selecting elements by declaring constants.
-const startButton = document.querySelector(".start-btn");
-const nextButton = document.querySelector(".next-btn");;
-const questionElement = document.querySelector(".question-text");
+const startButton = document.querySelector(".start_btn");
+const nextButton = document.querySelector(".next_btn");;
+const questionElement = document.querySelector("#question");
 const optionsElement = document.querySelector(".options");
 const resultContainer = document.querySelector(".result");
 
@@ -225,12 +225,14 @@ let currentQuestionIndex;
 
 // Event listener for the start button, which then displays the quiz instead
 function customAddEventListener(){
-    console.log("test");
     startButton.addEventListener("click", startQuiz)
-    // startButton.style.display = "none"
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    customAddEventListener();
+});
+
 function startQuiz() {
-    console.log('started')
     startButton.style.display = "none"
     startButton.classList.add("hide");
     questionElement.classList.remove("hide")
@@ -238,14 +240,13 @@ function startQuiz() {
     nextButton.addEventListener("click", () => {
         questionIndex++;
     });
-
-    startButton
-        instructionsContainer.classList.add("hide");
-        resultsContainer.classList.add("hide");
-        quizContainer.style.display = "block";
-        shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5);
-        questionIndex = 0;
-        loadQuestion();
+    // startButton
+    instructionsContainer.classList.add("hide");
+    resultsContainer.classList.add("hide");
+    quizContainer.style.display = "block";
+    shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5);
+    questionIndex = 0;
+    loadQuestion();
     }
 
 function loadQuestion() {
@@ -261,13 +262,9 @@ function showQuestion(question) {
     button.innerText = answer.text
     button.classList.add('btn')
     if (answer.correct) {
-    button.dataset.correct = answer.correct
+        button.dataset.correct = answer.correct
     }
     button.addEventListener('click', selectAnswer)
     answerButtonsElement.appendChild(button)
-        })
-    }
-
-    // buttonExit.addEventListener("click", backHome => {
-    //     window.location.href = "index.html";
-    //     });
+    })
+}
