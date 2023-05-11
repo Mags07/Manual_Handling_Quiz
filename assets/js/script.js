@@ -224,7 +224,10 @@ let shuffledQuestions;
 let currentQuestionIndex;
 
 // Event listener for the start button, which then displays the quiz instead
-startButton.addEventListener('click', startQuiz)
+function addEventListener(){
+    startButton.addEventListener("click", startQuiz)
+    startButton.style.display = "none"
+}
 
 function startQuiz() {
     console.log('started')
@@ -232,16 +235,17 @@ function startQuiz() {
     questionElement.classList.remove("hide")
     setNextQuestion()
     nextButton.addEventListener("click", () => {
-    questionIndex++;
-});
+        questionIndex++;
+    });
 
-startButton
-    instructionsContainer.classList.add("hide");
-    resultsContainer.classList.add("hide");
-    quizContainer.style.display = "block";
-    shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5);
-    questionIndex = 0;
-    loadQuestion();
+    startButton
+        instructionsContainer.classList.add("hide");
+        resultsContainer.classList.add("hide");
+        quizContainer.style.display = "block";
+        shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5);
+        questionIndex = 0;
+        loadQuestion();
+    }
 
 function loadQuestion() {
     resetState()
@@ -262,6 +266,6 @@ function showQuestion(question) {
         })
     }
 
-    buttonExit.addEventListener("click", backHome => {
-        window.location.href = "index.html";
-    });
+    // buttonExit.addEventListener("click", backHome => {
+    //     window.location.href = "index.html";
+    //     });
