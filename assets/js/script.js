@@ -213,24 +213,25 @@ const questionIndex = [{
 ]
 
 //Selecting elements by declaring constants.
-const startButton = document.querySelector("start-btn");
-const nextButton = document.querySelector("next-btn");;
+const startButton = document.querySelector(".start-btn");
+const nextButton = document.querySelector(".next-btn");;
 const questionElement = document.querySelector(".question-text");
-const optionsElement = document.querySelector("options");
-const resultContainer = document.querySelector("result");
+const optionsElement = document.querySelector(".options");
+const resultContainer = document.querySelector(".result");
 
 //Shuffling the questions, so there is a veriety for returning visitors.
 let shuffledQuestions;
 let currentQuestionIndex;
 
 // Event listener for the start button, which then displays the quiz instead
-function addEventListener(){
+function customAddEventListener(){
+    console.log("test");
     startButton.addEventListener("click", startQuiz)
-    startButton.style.display = "none"
+    // startButton.style.display = "none"
 }
-
 function startQuiz() {
     console.log('started')
+    startButton.style.display = "none"
     startButton.classList.add("hide");
     questionElement.classList.remove("hide")
     setNextQuestion()
@@ -253,6 +254,7 @@ function loadQuestion() {
     }
 
 function showQuestion(question) {
+    console.log("testtest");
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
     const button = document.createElement('button')
