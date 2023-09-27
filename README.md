@@ -181,19 +181,24 @@ Adding an invitation through email for employers to invite employees to take thi
 
 - Manual testing was complete of all 3 website pages. I.e. Start Quiz, Questions, Result.
 
-- Start Quiz
-    - Buttons 
-        - Expectated:
-        - Observed:
-        - Fixed by:
-    - Input Boxes
-        - Expectated:
-        - Observed:
-        - Fixed:
-    - Navigation links
-        - Expectated:
-        - Observed:
-        - Fixed:
+- Lighthouse:
+    - Desktop test:
+    ![](assets/images/desktop-lighthouse-test.png)
+
+    -DMobile test:
+    ![](assets/images/mobile-lighthouse-test.png)
+
+
+- [W3C CSS test](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-mags07-manual-handling-q-r0sh8mzz49.us2.codeanyapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#warnings)
+
+![](assets/images/w3c-css-validation.png)
+
+
+- Bugs:
+    - An @import rule was ignored because it wasn't defined at the top of the stylesheet. Such rules must appear at the top, before any style declaration and any other at-rule with the exception of @charset and @layer.
+        - I couldn't figure out why as I had @import defined in CSS.
+    - A cross-origin resource sharing (CORS) request was blocked because of invalid or missing response headers of the request or the associated preflight request .
+
 
 
 ## Deployment
