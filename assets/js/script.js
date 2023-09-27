@@ -224,12 +224,12 @@ let shuffledQuestions;
 let currentQuestionIndex;
 
 // Event listener for the start button, which then displays the quiz instead
-function customAddEventListener(){
+function addEventListener(){
     startButton.addEventListener("click", startQuiz)
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    customAddEventListener();
+    addEventListener();
 });
 
 function startQuiz() {
