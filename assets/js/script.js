@@ -280,7 +280,7 @@ function selectAnswer(z) {
     const selectedButton = z.target
     const correct = selectedButton.dataset.correct
     setStatus(document.body, correct)
-    Array.from(answerButtonsElement.children).forEach(button => {
+    Array.from(optionsElement.children).forEach(button => {
     setStatus(button, button.dataset.correct)
   })
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
