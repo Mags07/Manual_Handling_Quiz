@@ -240,7 +240,7 @@ function startQuiz() {
     // resultsContainer.classList.add("hide");
     // quizContainer.style.display = "block";
     questionIndex = 0;
-    shuffleQuestions = questions.sort(() => Math.random() - 0.5);
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     loadQuestion();
     nextButton.addEventListener("click", () => {
         questionIndex++;
@@ -248,25 +248,47 @@ function startQuiz() {
     }
 
 function loadQuestion() {
-    // reset()
-    showQuestion(shuffleQuestions[questionIndex])
+    showQuestion(shuffledQuestions[questionIndex])
     }
 
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
-        const button = document.createElement('button')
+        const button = document.createElement("button")
         button.innerText = answer.option[0]
             console.log(answer.option[0]);
         document.body.insertBefore(button, optionsElement);
-        button.classList.add('btn')
+        button.classList.add("btn")
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
-        button.addEventListener('click', selectAnswer)
+        button.addEventListener("click", selectAnswer)
         answerButtonsElement.appendChild(button)
     })
 }
+function reset() {
+    clearStatus(document.body)
+    document.classList.add("hide")
+    while (answerButtonsElement.firstChild) {
+      answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    }
+}
 
-//   function setStatusClass(element, correct) {
-//     clearStatusClass(element)
+function setStatus(element, correct) {
+    clearStatus(element)
+}
+
+function setStatus(element, correct) {
+    clearStatus(element)
+    if (correct) {
+      element.classList.add("correct")
+    } 
+    else {
+      element.classList.add("wrong")
+    }
+  }
+  
+  function clearStatus(element) {
+    element.classList.remove("correct")
+    element.classList.remove("wrong")
+  }
