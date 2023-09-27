@@ -232,13 +232,11 @@ document.addEventListener("DOMContentLoaded", () => {
     addEventListener();
 });
 
+//Hiding the questions and answers until the start button is pressed.
 function startQuiz() {
     startButton.style.display = "none"
     startButton.classList.add("hide");
     questionElement.parentElement.classList.remove("hide")
-    // instructionsContainer.classList.add("hide");
-    // resultsContainer.classList.add("hide");
-    // quizContainer.style.display = "block";
     questionIndex = 0;
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     loadQuestion();
@@ -251,6 +249,7 @@ function loadQuestion() {
     showQuestion(shuffledQuestions[questionIndex])
     }
 
+//Defining the questions and functions of choices.
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
@@ -266,6 +265,8 @@ function showQuestion(question) {
         answerButtonsElement.appendChild(button)
     })
 }
+
+//Reseting between the questions
 function reset() {
     clearStatus(document.body)
     document.classList.add("hide")
@@ -274,6 +275,7 @@ function reset() {
     }
 }
 
+//Answer selection functions.
 function selectAnswer(z) {
     const selectedButton = z.target
     const correct = selectedButton.dataset.correct
