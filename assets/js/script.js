@@ -274,6 +274,22 @@ function reset() {
     }
 }
 
+function selectAnswer(z) {
+    const selectedButton = z.target
+    const correct = selectedButton.dataset.correct
+    setStatus(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+    setStatus(button, button.dataset.correct)
+  })
+  if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove('hide')
+  }
+  else {
+    startButton.innerText = "Restart"
+    startButton.classList.remove("hide")
+  }
+}
+
 function setStatus(element, correct) {
     clearStatus(element)
 }
