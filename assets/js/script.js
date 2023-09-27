@@ -248,7 +248,7 @@ function startQuiz() {
     }
 
 function loadQuestion() {
-    reset()
+    // reset()
     showQuestion(shuffleQuestions[questionIndex])
     }
 
