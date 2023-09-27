@@ -214,12 +214,12 @@ const questions = [{
 
 //Selecting elements by declaring constants.
 const startButton = document.querySelector(".start_btn");
-const nextButton = document.querySelector(".next_btn");;
+const nextButton = document.querySelector(".next_btn");
 const questionElement = document.querySelector("#question");
 const optionsElement = document.querySelector(".options");
 const resultContainer = document.querySelector(".result");
 
-//Shuffling the questions, so there is a veriety for returning visitors.
+//Shuffling the questions, so there is a variety for returning visitors.
 let shuffledQuestions;
 let currentQuestionIndex;
 
@@ -240,7 +240,7 @@ function startQuiz() {
     // resultsContainer.classList.add("hide");
     // quizContainer.style.display = "block";
     questionIndex = 0;
-    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    shuffleQuestions = questions.sort(() => Math.random() - 0.5);
     loadQuestion();
     nextButton.addEventListener("click", () => {
         questionIndex++;
@@ -248,14 +248,16 @@ function startQuiz() {
     }
 
 function loadQuestion() {
-    showQuestion(shuffledQuestions[questionIndex])
+    reset()
+    showQuestion(shuffleQuestions[questionIndex])
     }
 
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
         const button = document.createElement('button')
-        button.innerText = answer.text
+        button.innerText = answer.option[0]
+            console.log(answer.option[0]);
         document.body.insertBefore(button, optionsElement);
         button.classList.add('btn')
         if (answer.correct) {
