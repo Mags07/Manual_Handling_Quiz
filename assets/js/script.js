@@ -270,8 +270,8 @@ function showQuestion(question) {
 function reset() {
     clearStatus(document.body)
     document.classList.add("hide")
-    while (answerButtonsElement.firstChild) {
-      answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    while (optionsElement.firstChild) {
+        optionsElement.removeChild(optionsElement.firstChild)
     }
 }
 
